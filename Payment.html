@@ -1,0 +1,226 @@
+<html lang="en">
+<head>
+<title>menu</title>
+<style>
+body{  background: lightblue url("project61.jpg") no-repeat fixed center;
+      background-color: #cccccc;
+      height:90%;
+      background-position: fixed; 
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-attachment:fixed
+      position: relative;
+      color:white;
+    }
+ .content{
+     background :white;
+     width:50%;
+     padding: 40%;
+     margin:100% auto;
+     font-family:calibri;
+        }
+  p{
+    font-size:100%;
+    color:white;
+    }
+.button {
+        background-color: #1c87c9;
+        border: none;
+        color: white;
+        padding: 20px 34px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+a:link,a:visited {
+background-colour:hsla(0,0%,100%,0.1);
+color:white;
+font-size:25px;
+font-family:baskerville old face;
+padding:14px 25px;
+text-align: center;
+text-decoration:none;
+display:inline-block;
+position:relative;
+bottom:50px;
+}
+a:hover,a:active
+{
+background-color:blue;
+color:black;
+font-size:40px;
+font-family:baskerville old face;
+padding:14px 25px;
+text-align: center;
+text-decoration:none;
+display:inline-block;
+position:relative;
+bottom:50px;
+}
+input[type=text],
+ select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=password],
+   select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+div {
+  border-radius: 20px;
+  background-color: #f2f2f200;
+  padding: 20px;
+}
+input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=password]{select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=number]{select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #0000A0;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #0000A0;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f200;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+<br>
+<br>
+<br>
+<p><h1>-----------------------------------------------------------------------------------------------------------------------------</h1></p>
+<p><h1>-----------------------------------------------------------------------------------------------------------------------------</h1></p>
+<center><h1><b><button style="background-color:silver;font-family:baskerville old face;color:black;font-size:30px;width:300px;
+            height:150px;" value="book">TICKET COST : 400.00 Rs Only </button></b></h1></center>
+<p><h1>-----------------------------------------------------------------------------------------------------------------------------</h1></p>
+<p><h1>-----------------------------------------------------------------------------------------------------------------------------</h1></p>
+<p><b><h1> PAYMENT SECTION </h1></b></p>
+<p><b><h3> NOTE: USER CAN HAVE MINIMUM OF 6 BANKS IN THE PREFERANCE LIST , THEY CAN MANAGE THEIR BANK PREFERANCE IN THE MY PROFILE SECTION IN THE IRCTC APP .</h3></b></p>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="thankyou.html"  method="post">
+        <div class="row">
+          <div class="col-50">
+            <h3>TICKET ADDRESS</h3>
+             <h2>
+             <label for="fname">Full Name</label><br>
+             <input type="text" id="fname" name="firstname" required  placeholder="george"><br>
+             <label for="email">Email</label><br>
+             <input type="text" id="email" name="email" required placeholder="abc.123@gmail.com"><br>
+             <label for="adr"> Address</label><br>
+             <input type="text" id="adr" name="address" required required><br>
+             <label for="state">State</label><br>
+             <input type="text" id="state" name="state" required ><br>
+             </div>
+             <div class="col-50">
+             <label for="pincode">Zip</label><br>
+             <input type="text" required name="zip" required placeholder="10001">
+             <br>
+             <br>
+            
+             <P> PAYMENT CARD PREFERANCE</P>
+             <input type = "radio" name="creditordebit">
+             <label for= "CreditorDebit">CREDIT CARD or DEBIT CARD (Check in for Credit, If Debit Ignore...)</label>
+             <br>
+             <br>
+             <input type="checkbox" name="card">
+             <label for="VISA"> VISA</label>
+             <input type="checkbox" name="card" autofocus checked>
+             <label for="MASTERO CARD"> MASTERO CARD</label>
+             <input type="checkbox" name="card"  autofocus>
+             <label for="DISCOVER">DISCOVER</label> 
+             <input type="checkbox" name="card">
+             <label for="AMEX">AMEX</LABEL>
+             <p><h5>"WE STRONGLY RECCOMMEND YOU TO CHECK THE BALANCE BEFORE SELECTING THE CARD OPTION"</h5></p>
+             <label for="cname">Name on Card</label><br>
+             <input type="text" id="cname" name="cardname" required  placeholder="George"><br>
+             <label for="cnum">Card number</label><br>
+             <input type="text" id="ccnum" name="cardnumber" required placeholder="XXXX"><br>
+             <label for="expmonth">Exp Month</label><br>
+             <input type="text" id="expmonth" name="expmonth" required placeholder="September"><br>
+             <label for="expyear">Exp Year</label><br>
+             <input type="number" id="expyear" name="expyear" required placeholder="2025"><br>
+             <br>
+             <label for="cvv">CVV</label><br>
+             <input type="text" id="cvv" name="cvv" required placeholder="352"></h2><br>
+             <label for="ENTER CAPTCHA">ENTER THE CAPTCHA SHOWN : <h2>$jkc5i*</h2></label><br><br>
+             <input type="text" id="captcha" required></h6>
+             </div>
+             </div>
+             </div>
+            <br>
+           <button type="booked"  style="background-color:blue;font-family:baskerville old face;color:white;width:169px;
+            height:60px;" value="book">PAY</button>
+            <br>
+            </form>
+            <br>
+            <br>
+            <br>
+            <a href="Booking.html" class="button">GO BACK TO BOOKING PAGE</a>
+            <br>
+            <a href="registered.html" class="button">SIGNOUT</a>
+    </div>
+  </div>
+</div>
+<p><h1>-----------------------------------------------------------------------------------------------------------------------------</h1></p>
+<p><h1>-----------------------------------------------------------------------------------------------------------------------------</h1></p>
+<h2><b><p>WARNING:In the wake of COVID 19 and as a measure of abundant caution, booking has been suspended for almost all trains until further advice. <br>
+<br>
+<br>PASSENGER SERVICES ARE OPERATED ONLY SPARSELY (only 7 express trains are operated allover INDIA , this might fluctuate anyday.)</b></p></h2>
+<h2><b><p><br>"we strongly recommend you to stay home stay safe , and travel only if it is neccassary"</p></b></h2><h1>INCONVENIENCE REGRETTED.</h1>
+<p><h1>-----------------------------------------------------------------------------------------------------------------------------</h1></p>
+<p><h1>-----------------------------------------------------------------------------------------------------------------------------</h1></p>
+</body>
+</html>

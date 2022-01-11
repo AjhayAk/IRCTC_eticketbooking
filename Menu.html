@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+<title>menu</title>
+<style>
+body{  
+      background: lightblue url("project56.jpg") no-repeat fixed center;
+      background-color: #cccccc;
+      height:90%;
+      background-position: fixed; 
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-attachment:fixed
+      position: relative;
+      color:white;
+    }
+ .content{
+     background :white;
+     width:50%;
+     padding: 40%;
+     margin:100% auto;
+     font-family:courier,arial,helvetica;
+        }
+  p{
+    font-size:100%;
+    color:white;
+    font-family:courier,arial,helvetica;
+    }
+ .button {
+        background-color: #1c87c9;
+        border: none;
+        color: white;
+        padding: 20px 34px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+a:link,a:visited {
+background-colour:hsla(0,0%,100%,0.1);
+color:white;
+font-size:25px;
+font-family:baskerville old face;
+padding:14px 25px;
+text-align: center;
+text-decoration:none;
+display:inline-block;
+position:relative;
+bottom:50px;
+}
+a:hover,a:active
+{
+background-color:blue;
+color:black;
+font-size:25px;
+font-family:baskerville old face;
+padding:14px 25px;
+text-align: center;
+text-decoration:none;
+display:inline-block;
+position:relative;
+bottom:50px;
+}
+</style>
+</head>
+<body>
+<br>
+<br>
+<br>
+<center><h1><b>WELCOME TO INDIAN RAILWAYS</b></h1></center>
+<p>Date/Time: <span id="datetime"></span></p>
+<h1><script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+</script></h1>
+<br>
+<br>
+<p><center><h3>NOTE:YOU ARE ALLOWED TO BOOK TICKETS , ONLY IF YOU HAVE AN ACCOUNT.<BR><BR> LOGIN TO BOOK TICKETS , REGISTER TO SET A NEW ACCOUNT. </h3></Center></p>
+<br>
+<br>
+<br>
+<center><h1>&nbsp;<a href="Alert.html" class="button">ALERT</a>&nbsp;<a href="ContactUs.html" class="button">CONTACT</a>&nbsp;<a href="AccountRegistration.html" class="button">REGISTER</a>&nbsp;<a href="CantLogin.html" class="button">LOGIN</a>&nbsp;<a href="Gallery.html" class="button">GALLERY</a>&nbsp;</h1>
+<center><h2><b><pre>scan the QR-CODE to get IRCTC app.</pre></b></h2></center>
+<center><img src="project25.jpg" height="13%"width="10%"></center>
+<center><h2><b>THANK YOU FOR USING IRCTC.</b></h2></center> 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

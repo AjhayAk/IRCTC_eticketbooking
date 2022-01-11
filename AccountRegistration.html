@@ -1,0 +1,193 @@
+<html lang="en">
+<head>
+<title>REGISTRATION</title>
+<style>
+body{  background: lightblue url("project53.jpg") no-repeat fixed center;
+      background-color: #cccccc;
+      height:90%;
+      background-position: fixed; 
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-attachment:fixed
+      position: relative;
+      color:white;
+    }
+ .content{
+     background :white;
+     width:50%;
+     padding: 40%;
+     margin:100% auto;
+     font-family:calibri;
+        }
+  p{
+    font-size:100%;
+    color:white;
+    font-family:courier,arial,helvetica;
+    }
+ .button {
+        background-color: #1c87c9;
+        border: none;
+        color: white;
+        padding: 20px 34px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+a:link,a:visited {
+background-colour:hsla(0,0%,100%,0.1);
+color:white;
+font-size:25px;
+font-family:baskerville old face;
+padding:14px 25px;
+text-align: center;
+text-decoration:none;
+display:inline-block;
+position:relative;
+bottom:50px;
+}
+a:hover,a:active
+{
+background-color:blue;
+color:black;
+font-size:25px;
+font-family:baskerville old face;
+padding:14px 25px;
+text-align: center;
+text-decoration:none;
+display:inline-block;
+position:relative;
+bottom:50px;
+}
+input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=password]{select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=number]{select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #0000A0;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #0000A0;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f200;
+  padding: 20px;
+}
+</style>
+<script type="text/javascript">
+function validate() {
+var a=document.getElementById("fname").value;
+var b=document.getElementById("lname").value;
+var d=document.getElementById("gender").value;
+var e=document.getElementById("email").value;
+var f=document.getElementById("add").value;
+var h=document.getElementById("nationality").value;
+var j=document.getElementById("login").value;
+var k=document.getElementById("password").value;
+var l=document.getElementById("retype").value;
+var n=document.getElementById("captcha").value;
+
+if(a==""){alert("enter the correct first name");return false;}
+if(b=""){alert("enter the correct name");return false;}
+if(d==""){alert("gender is required"); return false;}
+if(e==""){alert("e-mail id is required"); return false;}
+if(f==""){alert("address is required"); return false;}
+if(h==""){alert ("nationality is required"); return false;}
+if(j!="ajhayak"){alert("login id is required "); return false;}
+if(k!="aabbccc"){alert("please choose a valid password"); return false;}
+if(l!="aabbccc"){alert("retype the correct password"); return false;}
+if(n!="@nM%8~9aA"){alert("enter the correct captcha"); return false;}
+ return true;
+}
+</script>
+
+</head>
+<body>
+<div>
+<br>
+<br>
+    <h1><b>PLEASE FILL OUT THE ACCOUNT REGISTERATION DETAILS</b><h1>
+    <form onsubmit="return validate()" action="registered.html" method="post">
+    <h2> <legend>PERSONAL DETAILS </legend></h2>
+    <h6><p>FIRST NAME :</P>
+    <input type="text" maxlength="20" id="fname" placeholder="your first name">
+    <p>LAST NAME :</P>
+    <input type="text" maxlength="20" id="lname"  placeholder="your last name">
+    <p>DOB :</P>
+    <input type="date" id="date" min="01-01-1900" placeholder="dd/mm/yyyy">
+    <p>GENDER (NOTE : TYPE M-MALE   F-FEMALE    T-TRANSGENDER   O- I'D RATHER NOT SAY )</P>
+    <input type="text" id="gender"   placeholder="M">
+    <p>e-MAIL :</P>
+    <input type="text" id="email"  title="please enter a valid e mail address" placeholder="abc10@gmail.com">
+    <p>ADDRESS:</P>
+    <input type="text" id="add"  placeholder="your residential address">
+    <p> MOBILE NUMBER :</P>
+    <input type="tel" id="mb"  min=1000000000 max=9999999999 title="please enter a valid phone number" placeholder="please enter your phone number">
+    <p>NATIONALITY :</P>
+    <input type="text" id="nationality"   placeholder="INDIAN"></h6>
+    <br>
+    <br>
+    <h2>  <legend>CONFIDENTIAL DETAILS</legend></h2> 
+    <h6><p> DATE OF REGISTRATION </p>
+    <input type="date" id="dateofregistration" required placeholder="dd/mm/yyyy"><br><br>
+    <label for="LOGIN-ID">LOGIN-ID</label><br><br>
+    <input type="text" id="login" maxlength="20"placeholder="abc123"><br><br>
+    <label for="PASSWORD">PASSWORD</label><br><br>
+    <input type="password" id="password"    placeholder="Minimum 6 characters">
+    <p>RETYPE PASSWORD TO CONFIRM :</P>
+    <input type="password" id="retype"   placeholder="confirm">
+    <p>IM NOT A ROBOT :</P>
+    <p>yes:</p>
+    <input type="radio" checked required name="type">
+    <p>no:</p>
+    <input type="radio" name="type"><br>
+    <label for="ENTER CAPTCHA">ENTER THE CAPTCHA SHOWN : @nM%8~9aA</label><br><br>
+    <input type="text" id="captcha"></h6>
+    <h3><p>CHECK THE DETAILS AND CLICK SUBMIT</P></h3>
+   <button type="submit"  style="background-color:blue;font-family:baskerville old face;color:white;width:135px;
+height:60px;" value="submit">REGISTER</button>
+</form>
+<br>
+<br>
+<br>
+<a href="menu.html" class="button">HOME</a>
+<br>
+</div>
+</body>
+</html>

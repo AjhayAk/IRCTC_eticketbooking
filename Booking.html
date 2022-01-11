@@ -1,0 +1,352 @@
+<html lang="en">
+<head>
+<title>menu</title>
+<style>
+body{  background: lightblue url("project63.jpg") no-repeat fixed center;
+      background-color: #cccccc;
+      height:90%;
+      background-position: fixed; 
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-attachment:fixed
+      position: relative;
+      color:white;
+    }
+ .content{
+     background :white;
+     width:50%;
+     padding: 40%;
+     margin:100% auto;
+     font-family:calibri;
+        }
+  p{
+    font-size:100%;
+    color:white;
+    }
+.button {
+        background-color: #1c87c9;
+        border: none;
+        color: white;
+        padding: 20px 34px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+a:link,a:visited {
+background-colour:hsla(0,0%,100%,0.1);
+color:white;
+font-size:25px;
+font-family:baskerville old face;
+padding:14px 25px;
+text-align: center;
+text-decoration:none;
+display:inline-block;
+position:relative;
+bottom:50px;
+}
+a:hover,a:active
+{
+background-color:blue;
+color:black;
+font-size:25px;
+font-family:baskerville old face;
+padding:14px 25px;
+text-align: center;
+text-decoration:none;
+display:inline-block;
+position:relative;
+bottom:50px;
+}
+input[type=text],
+ select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=password],
+   select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+div {
+  border-radius: 20px;
+  background-color: #f2f2f200;
+  padding: 20px;
+}
+input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=password]{select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=number]{select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #0000A0;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #0000A0;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f200;
+  padding: 20px;
+}
+</style>
+<script>
+function validation() {
+
+var a=document.getElementById("fn").value;
+var b=document.getElementById("ln").value;
+var c=document.getElementById("gen").value;
+var d=document.getElementById("mail").value;
+var e=document.getElementById("ad").value;
+var f=document.getElementById("tname").value;
+var g=document.getElementById("from").value;
+var i=document.getElementById("to").value;
+
+if(a==""){alert("enter the correct first name");return false;}
+if(b==""){alert("enter the correct last name");return false;}
+if(c==""){alert("gender is required"); return false;}
+if(d==""){alert("e-mail id is required"); return false;}
+if(e==""){alert("address is required"); return false;}
+if(f==""){alert("train name is must "); return false;}
+if(g==""){alert("from location is required"); return false;}
+if(h==""){alert("to loaction is required"); return false;}
+ return confirm("CONFIRM BOOKING ?");
+}
+</script>
+</head>
+<body>
+<br>
+<br>
+<br>
+<br>
+<h2><b><p> WARNING : <h1><center>In the wake of COVID 19 and as a measure of abundant caution, booking has been suspended for almost all trains until further advice.</center><br><center>PASSENGER SERVICES ARE OPERATED ONLY SPARSELY <br>(only 7 express trains are operated allover INDIA , this might fluctuate anyday.)</center></br></b></p></h1>
+<h1><b><p><center>"we strongly recommend you to stay home stay safe , and travel only if it is neccassary"</center></p></b></h1><br>
+<br><h1><center>INCONVENIENCE REGRETTED</center></h1>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><p>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <p>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+<br>
+<h2><b><p> AVAILABLE SERVICES ( minimum 50 seats available )</p></b></h2>
+<br>
+<br>
+<table>
+<tr>
+<th>S.NO</th>
+<th>TRAIN NUMBER</th>
+<th>TRAIN NAME </th>
+<th>FROM</th>
+<th>TO</th>
+<th>ARRIVAL</th>
+<th>DEPARTURE</th>
+<th>DESTINATION TIME</th>
+<th>DAY AVAILABLE</th>
+</tr>
+<tr>
+<th>01</th>
+<th>19610</th>
+<th>AJMER EXPRESS</th>
+<th>AMRISTER</th>
+<th>AJMER</th>
+<th>14.00</th>
+<th>14.30</th>
+<th>10.00</th>
+<th>TUESDAY</th>
+</tr>
+<tr>
+<th>02</th>
+<th>12680</th>
+<th>CBE-MAS INTERCITY</th>
+<th>COIMBATORE JUNCTION</th>
+<th>MGR CHENNAI</th>
+<th>5.55</th>
+<th>6.15</th>
+<th>13.30</th>
+<th>DAILY</th>
+</tr>
+<tr>
+<th>03</th>
+<th>22702</th>
+<th>UDHAY EXPRESS</th>
+<th>VIJAYWADA JUNCTION</th>
+<th>VISHAKAPATNAM JUNCTION</th>
+<th>17.00</th>
+<th>17.30</th>
+<th>23.00</th>
+<th>DAILY</th>
+</tr>
+<tr>
+<th>04</th>
+<th>06304</th>
+<th>MANGLORE EXPRESS</th>
+<th>NAGERCOIL</th>
+<th>MANGLORE</th>
+<th>20.00</th>
+<th>20.35</th>
+<th>11.20 (NEXTDAY)</th>
+<th>DAILY(EXCEPT TUESDAY)</th>
+</tr>
+<tr>
+<th>05</th>
+<th>16616</th>
+<th>CHEMOZHI EXPRESS</th>
+<th>COIMBATORE</th>
+<th>MANNARGUDI</th>
+<th>20.00</th>
+<th>20.20</th>
+<th>04.45(NEXTDAY)</th>
+<th>DAILY</th>
+</tr>
+<tr>
+<th>06</th>
+<th>15910</th>
+<th>AVADH ASSAM EXPRESS</th>
+<th>LALGARH JUNCTION</th>
+<th>DELHI(RESTRICTED)</th>
+<th>19.00</th>
+<th>19.45</th>
+<th>07.15(NEXTDAY)</th>
+<th>DAILY</th>
+</tr>
+<tr>
+<th>07</th>
+<th>09313</th>
+<th>ALLAHABAD EXPRESS</th>
+<th>INDORE JUNCTION</th>
+<th>ALLAHABAD JUNCTION</th>
+<th>17.00</th>
+<th>17.20</th>
+<th>13.05(NEXTDAY)</th>
+<th>SUNDAY ONLY</th>
+</tr>
+<tr>
+</table>
+<p><b>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</b></p>
+<p><b>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</b></p>
+<p><b><h2><u>BOOK TICKETS </u></h2></b></p>
+<div>
+    <form action="Payment.html" method="post" onclick="return validation()">
+    <feildset><h2> <legend><u>PERSONAL DETAILS</u><h6>(note: you receive ticket details via mail, sms to the phonenumber you provide)</legend></h2>
+    <h6><p>FIRST NAME :</P>
+    <input type="text" maxlength="20" id="fn" autofocus placeholder="your first name">
+    <p>MIDDLE NAME :</P>
+    <input type="text" maxlength="20"  placeholder="your middle name(optional)">
+    <p>LAST NAME :</P>
+    <input type="text" maxlength="20" id="ln" autofocus placeholder="your last name">
+    <p>DOB :</P>
+    <input type="date" required autofocus min="01/01/1900" placeholder="dd/mm/yyyy">
+    <p>AGE:</P>
+    <input type="number" required autofocus min=18 placeholder="18">
+    <p>SEX (NOTE : TYPE M-MALE   F-FEMALE    T-TRANSGENDER   O- I'D RATHER NOT SAY )</P>
+    <input type="text" id="gen" autofocus  placeholder="M">
+    <p>e-MAIL :</P>
+    <input type="text" id="mail" autofocus title="please enter a valid e mail address" placeholder="abc10@gmail.com">
+    <p>ADDRESS:</P>
+    <input type="text" id="ad"  placeholder="your residential address">
+    <p> MOBILE NUMBER :</P>
+    <input type="tel" required  title="please enter a valid phone number" placeholder="please enter your phone number">
+    <p> AADHAR NUMBER</P>
+    <input type="number" id="aadhar" autofocus min=10>
+    <p>PAN NUMBER</P>
+    <input type="number" placeholder="optional">
+    <p>VOTER ID NUMBER</P>
+    <input type="number" placeholder="optional">
+    </feildset><br>
+   <p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<p>
+   <p>------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<p>   
+   <feildset><h2><legend><u>TICKET DETAILS</u><h6>(note:Please book from available trains only)</h6></legend></h2>
+    <p>TICKET TYPE</P>
+    <input type="checkbox" name="ticket" checked>
+    <label for="E-TICKET"> E-TICKET</label>
+    <input type="checkbox" name="ticket">
+    <label for="I-TICKET">I-TICKET</label>
+    <p>TRAIN NAME</P>
+    <input type="TEXT" id="tname" autofocus>
+    <p>TRAIN NUMBER:</P>
+    <input type="number" required autofocus>
+    <P>FROM</P>
+    <input type="TEXT" id="from" autofocus>
+    <P>TO</P>
+    <input type="TEXT" id="to" autofocus>
+    <p> DATE OF JOURNEY </p>
+    <input type="date" required placeholder="dd/mm/yyyy"><br>
+    <p>TOTAL MEMBERS</P>
+    <input type="number" required autofocus min="1" placeholder="1">
+    <P><B>ENTER THE NAME , GENDER , AGE AND ABILITY STATUS OF THE MEMBER(S) <BR> <h5>FORMAT: 1.GEORGE,MALE,18,ABLED . ( FORMAT MUST STRICTLY BE FOLLOWED.USE UPPER CASE . ) </h5></B></P>
+    <input type="TEXT" required autofocus min="1"  placeholder="1.GEORGE,MALE,18,ABLED">
+    <P>COACH PREFERANCE</P>
+    <input type="checkbox" name="pre"id="1st AC">
+    <label for="1st AC"> 1st AC</label>
+    <input type="checkbox" name="pre"id="2ND AC">
+    <label for="2ND AC"> 2ND AC</label>
+    <input type="checkbox" name="pre" id="SLEEPER" autofocus checked>
+    <label for="SLEEPER">SLEEPER</label> 
+    <input type="checkbox" name="pre" id="UR">
+    <label for="UR">UR</LABEL>
+    <p>BIRTH PREFERENCE</P>
+    <input type="checkbox" name="birth" id="WINDOWSIDE" checked>
+    <label for="WINDOWSIDE"> WINDOWSIDE</label>
+    <input type="checkbox" name="birth" id="MIDDLE">
+    <label for="MIDDLE"> MIDDLE</label>
+    <input type="checkbox" name="birth" id="LOWER">
+    <label for="LOWER">LOWER</label> 
+   <P>BOOK?</P>
+<button type="book"  style="background-color:blue;font-family:baskerville old face;color:white;width:169px;
+height:60px;" value="book">BOOK NOW</button>
+</form>
+<br>
+<br>
+<br>
+<a href="registered.html" class="button">SIGNOUT</a>
+</feildset>
+</form>
+</div>
+</body>
+</html

@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+<title>menu</title>
+<style>
+body{  
+      background: lightblue url("project65.jpg") no-repeat fixed center;
+      background-color: #cccccc;
+      height:90%;
+      background-position: fixed; 
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-attachment:fixed
+      position: relative;
+      color:white;
+    }
+  p{
+    font-size:200%;
+    color:white;
+    font-family:courier,arial,helvetica;
+    }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 50px;
+  padding: 10px;
+  border: none;
+  background:blue;
+  color: blue;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: blue;
+  color: black;
+}
+ .button {
+        background-color: #1c87c9;
+        border: none;
+        color: white;
+        padding: 20px 34px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+a:link,a:visited {
+background-colour:hsla(0,0%,100%,0.1);
+color:white;
+font-size:25px;
+font-family:baskerville old face;
+padding:14px 25px;
+text-align: center;
+text-decoration:none;
+display:inline-block;
+position:relative;
+bottom:50px;
+}
+a:hover,a:active
+{
+background-color:blue;
+color:black;
+font-size:25px;
+font-family:baskerville old face;
+padding:14px 25px;
+text-align: center;
+text-decoration:none;
+display:inline-block;
+position:relative;
+bottom:50px;
+
+
+</style>
+</head>
+<br>
+<br>
+<br>
+<center><h1><p><b><u> DOCUMENTARY OF INDIAN RAILWAYS</u></b></p></h1></center>
+<br>
+<center><iframe width="853" height="480" src="https://www.youtube.com/embed/HkKtU5JxCtM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+<br>
+<br>
+<center><iframe width="853" height="480" src="https://www.youtube.com/embed/gPI4pHuBnYA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+<br>
+<br>
+<center><iframe width="853" height="480" src="https://www.youtube.com/embed/i8hs24tvR_8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+<br>
+<iframe width="853" height="480" src="https://www.youtube.com/embed/hDQCOSUHYms" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center><br>
+<br>
+<center><video autoplay loop id="project">
+  <source src="project.mp4" type="video/mp4">
+</video></center>
+<div class="content">
+  <button id="PLAY/PAUSE" onclick="myFunction()">PLAY/PAUSE</button>
+</div>
+<script>
+var video = document.getElementById("project");
+var btn = document.getElementById("PLAY/PAUSE");
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "PAUSE";
+  } else {
+    video.pause();
+    btn.innerHTML = "PLAY";
+  }
+}
+</script>
+<br>
+<br>
+<center><H1>YOUR SAFETY OUR PRIORITY , THANK YOU !
+<br>
+<br>
+<br>
+<a href="menu.html" class="button">HOME</a>&nbsp;</H1></center>
+</body>
+</html>
